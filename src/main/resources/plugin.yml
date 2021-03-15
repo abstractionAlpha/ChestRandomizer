@@ -1,6 +1,6 @@
 name: ChestRandomizer
 version: 1.0-SNAPSHOT
-main: com.abstractionalpha.minecraft.plugins.chestrandomizer.ChestRandomizer
+main: com.abstractionalpha.minecraft.plugins.chestrandomizer.manager.ChestRandomizer
 api-version: 1.16
 authors: [abstractionAlpha]
 description: Random loot for chests. Useful for survival games,

@@ -1,5 +1,6 @@
 package com.abstractionalpha.minecraft.plugins.chestrandomizer;
 
+import com.abstractionalpha.minecraft.plugins.chestrandomizer.manager.ChestRandomizer;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.event.Listener;
