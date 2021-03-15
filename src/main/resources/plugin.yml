@@ -1,5 +1,5 @@
 name: ChestRandomizer
-version: 1.0-SNAPSHOT
+version: 4.0-SNAPSHOT
 main: com.abstractionalpha.minecraft.plugins.chestrandomizer.manager.ChestRandomizer
 api-version: 1.16
 authors: [abstractionAlpha]
