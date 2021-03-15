@@ -1,0 +1,12 @@
+name: ChestRandomizer
+version: 1.0-SNAPSHOT
+main: com.abstractionalpha.minecraft.plugins.chestrandomizer.ChestRandomizer
+api-version: 1.16
+authors: [abstractionAlpha]
+description: Random loot for chests. Useful for survival games,
+commands:
+  cr:
+    description: Root command. Lists all command options.
+    usage: /<command>
+    permission: chestrandomizer.cr
+    permission-message: You do not have <permission>.
