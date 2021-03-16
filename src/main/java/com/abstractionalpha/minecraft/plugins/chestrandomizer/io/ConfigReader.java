@@ -10,6 +10,7 @@ import com.abstractionalpha.minecraft.plugins.chestrandomizer.objects.Tier;
 import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.plugin.java.JavaPlugin;
 
 import java.rmi.NoSuchObjectException;
 import java.util.ArrayList;
@@ -19,7 +20,7 @@ public class ConfigReader {
     private static FileConfiguration config;
 
     public static void loadChestRandomizer(ChestDirectory chests, RegionDirectory regions, TierDirectory tiers) {
-        config = ChestRandomizer.getInstance().getConfig();
+        config = JavaPlugin.getPlugin(ChestRandomizer.class).getConfig();
 
         createTierDirectory((ArrayList<String>) config.getStringList("tiers"), tiers);
         createChestDirectory((ArrayList<String>) config.getStringList("chests"), chests, regions, tiers);
@@ -54,9 +55,9 @@ public class ConfigReader {
             }
 
             try {
-                world = ChestRandomizer.getInstance().getServer().getWorld(config.getString("chests." + name + ".world"));
+                world = JavaPlugin.getPlugin(ChestRandomizer.class).getServer().getWorld(config.getString("chests." + name + ".world"));
             } catch (NullPointerException e) {
-                world = ChestRandomizer.getInstance().getServer().getWorlds().get(0);
+                world = JavaPlugin.getPlugin(ChestRandomizer.class).getServer().getWorlds().get(0);
             }
 
             toAdd = new ChestInstance(name, tier, region, x, y, z, world);
