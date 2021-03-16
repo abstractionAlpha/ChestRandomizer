@@ -36,7 +36,7 @@ public final class ChestRandomizer extends JavaPlugin {
      */
     @Override
     public void onEnable() {
-        ConfigReader.loadChestRandomizer(chests, regions, tiers);
+        ConfigReader.loadChestRandomizer(chests, regions, tiers); // TODO: Patch loadChestRandomizer
         getCommand("cr").setExecutor(new ChestRandomizerCommandExecutor());
         saveDefaultConfig();
     }

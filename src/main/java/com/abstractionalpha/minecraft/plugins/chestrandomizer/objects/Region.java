@@ -47,4 +47,8 @@ public class Region {
 
         return false;
     }
+
+    public ArrayList<ChestInstance> getChests() {
+        return chests;
+    }
 }
