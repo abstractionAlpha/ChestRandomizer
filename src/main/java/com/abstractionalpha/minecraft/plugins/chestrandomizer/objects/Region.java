@@ -26,7 +26,7 @@ public class Region {
         }
 
         chests.add(chest);
-        chest.setRegion(getName());
+        chest.setRegion(this);
     }
 
     public void removeChestFromRegion(ChestInstance chest) throws IllegalArgumentException {
