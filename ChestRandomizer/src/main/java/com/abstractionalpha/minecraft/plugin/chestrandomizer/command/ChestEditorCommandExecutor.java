@@ -91,5 +91,9 @@ public class ChestEditorCommandExecutor implements CommandExecutor {
 	public boolean getEditorMode() {
 		return editorMode;
 	}
+	
+	public ItemStack getItemStack() {
+		return isChestEditor.clone();
+	}
 
 }
