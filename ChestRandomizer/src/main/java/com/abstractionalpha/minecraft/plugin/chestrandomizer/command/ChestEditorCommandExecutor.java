@@ -80,6 +80,7 @@ public class ChestEditorCommandExecutor implements CommandExecutor {
 		lore.add("Left-click chest to edit.");
 		lore.add("Right-click to modify editor.");
 		im.setLore(lore);
+		is.setItemMeta(im);
 		return is;
 	}
 	
