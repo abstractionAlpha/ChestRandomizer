@@ -1,0 +1,10 @@
+name: ChestRandomizer
+main: com.abstractionalpha.minecraft.plugin.chestrandomizer.ChestRandomizer
+version: 4.0
+author: abstractionAlpha
+commands:
+  chesteditor:
+    description: Command to access editor mode. Enables editor mode for all administrators.
+    usage: /chesteditor
+    permission: chestrandomizer.admin
+    permission-message: You don't have <permission>
